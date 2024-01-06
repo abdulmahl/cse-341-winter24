@@ -1,8 +1,13 @@
 // express web server
 const express = require("express");
 const app = express();
+
 app.get("/", (req, res) => {
-  res.send("Nodemon dews");
+  res.send("Nodemon Dews");
+});
+
+app.get("/hannah", (req, res) => {
+  res.send("Hannah Dews");
 });
 
 const port = 3000
