@@ -3,7 +3,7 @@ const emilyRoute = (req, res) => {
 };
 
 const LouiRoute = (req, res) => {
-  res.send("Loui Dews");
+  res.send("loui Dews");
 };
 
 const hannahRoute = (req, res) => {
