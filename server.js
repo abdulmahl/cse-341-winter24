@@ -1,16 +1,12 @@
 // express web server
 const express = require("express");
 const app = express();
+const lesson1Controller = require("./controllers/lesson1");
 
-app.get("/", (req, res) => {
-  res.send("Nodemon Dews");
-});
+app.get("/", lesson1Controller.emilyRoute);
+app.get("/hannah", lesson1Controller.hannahRoute);
 
-app.get("/hannah", (req, res) => {
-  res.send("Hannah Dews");
-});
-
-const port = 3000
+const port = 3000;
 
 app.listen(process.env.port || port);
-console.log(`Web server is listening at port ${(process.env.port || port)}`);
+console.log(`Web server is listening at port ${process.env.port || port}`);
