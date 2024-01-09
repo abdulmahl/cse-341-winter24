@@ -1,4 +1,5 @@
-const routes = require("./route/routes");
+//? This the main server.
+const routes = require("./route/routes"); //* Import routes form route folder
 
 const express = require("express"),
   app = express(),

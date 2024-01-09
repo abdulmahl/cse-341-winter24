@@ -1,5 +1,6 @@
-const route = require("express").Router();
-const controller = require("../controller/functions");
+//? This is the routes controller
+const route = require("express").Router(); //* Router instance
+const controller = require("../controller/functions"); //* Import functions
 
 route.get("/", controller.routeOne);
 route.get("/two", controller.routeTwo);

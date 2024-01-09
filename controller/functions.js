@@ -1,3 +1,4 @@
+//? This is the functions controller.
 const routeOne = (req, res) => {
   res.send("Hello Route One / Home!");
 };
