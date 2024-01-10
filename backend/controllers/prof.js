@@ -22,6 +22,6 @@ const data = {
   contactText: "You can contact him here mdu_abdul@icloud.com",
 };
 
-exports.getData = (req, res) => {
+exports.getData = (req, res, next) => {
   res.status(200).json(data);
 };

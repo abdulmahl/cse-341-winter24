@@ -1,6 +1,6 @@
 const express = require("express");
 
-const professional = require("../backend/controllers/prof");
+const professional = require("../controllers/prof");
 
 const router = express.Router();
 
