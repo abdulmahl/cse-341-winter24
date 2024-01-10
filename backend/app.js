@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
 const professionalRoutes = require("./routes/prof");
 
@@ -18,3 +19,4 @@ app.use("/professional", professionalRoutes);
 
 app.listen(port);
 console.log(`Listening on port: ${port}`);
+console.log(process.env.VALUE_ONE);
