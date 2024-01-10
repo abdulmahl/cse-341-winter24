@@ -9,7 +9,7 @@ const port = 8080;
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  res.setHeader('Allow-Control-Allow-Origin', '*');
+  res.setHeader("Allow-Control-Allow-Origin", "*");
   next();
 });
 
