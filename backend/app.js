@@ -17,3 +17,4 @@ app.use((req, res, next) => {
 app.use("/professional", professionalRoutes);
 
 app.listen(port);
+console.log(`Listening on port: ${port}`);
