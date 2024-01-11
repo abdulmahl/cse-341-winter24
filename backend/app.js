@@ -1,11 +1,11 @@
 const express = require("express");
+const app = express();
 const bodyParser = require("body-parser");
-const MongoClient = require("mongodb").MongoClient;
+const route = require("./routes/prof");
 const mongodb = require("./database/connection");
-const professionalRoutes = require("./routes/prof");
+const MongoClient = require("mongodb").MongoClient;
 
 const port = process.env.PORT || 8080;
-const app = express();
 
 app
   .use(bodyParser.json())
@@ -13,13 +13,13 @@ app
     res.setHeader("Access-Control-Allow-Origin", "*");
     next();
   })
-  .use("/professional", professionalRoutes);
+  .use("/professional", route);
 
-mongodb.initDb((err, mongodb) => {
+mongodb.initDB((err, mongodb) => {
   if (err) {
-    console.log(err);
+    console.error(err);
   } else {
     app.listen(port);
-    console.log(`Connected to DB and listening on ${port}`);
+    console.log(`DB connected and listening on port ${port}`);
   }
 });
