@@ -7,7 +7,7 @@ let _db;
 
 const initDB = (callback) => {
   if (_db) {
-    console.log("Db is already initialized!");
+    console.log("DB is already initialized!");
     return callback(null, _db);
   }
   user
@@ -23,7 +23,7 @@ const initDB = (callback) => {
 
 const getDB = () => {
   if (!_db) {
-    throw Error("Db not initialized");
+    throw Error("DB not initialized");
   }
   return _db;
 };
