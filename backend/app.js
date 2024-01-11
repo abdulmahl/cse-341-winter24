@@ -15,7 +15,7 @@ app
   })
   .use("/professional", route);
 
-mongodb.initDB((err, mongodb) => {
+mongodb.initDB((err) => {
   if (err) {
     console.error(err);
   } else {
