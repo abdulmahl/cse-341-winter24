@@ -81,7 +81,8 @@ body {
   clear: both;
 }
 img {
-  width: 50%;
+  width: 70%;
+  height: 100%;
 }
 /* PYRAMID CODE */
 .stage {
