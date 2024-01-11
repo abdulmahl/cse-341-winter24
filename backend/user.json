@@ -1,6 +1,8 @@
-{
-  "user":
+[
   {
+    "_id": {
+      "$oid": "621fe1f527d68ebb24438395"
+    },
     "professionalName": "Abdul Mahlangu",
     "nameLink": {
       "firstName": "Mduduzi",
@@ -20,6 +22,6 @@
       "link": "https://github.com/abdulmahl/",
       "text": "GitHub"
     },
-    "contactText": " He can be contacted on this email address mdu_abdul@icloud.com"
+    "contactText": "He can be contacted on this email address mdu_abdul@icloud.com"
   }
-}
+]
