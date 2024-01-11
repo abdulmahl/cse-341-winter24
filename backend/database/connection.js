@@ -18,7 +18,7 @@ const initDB = (callback) => {
     })
     .catch((err) => {
       callback(err);
-    });
+    }).finally(user.close());
 };
 
 const getDB = () => {
